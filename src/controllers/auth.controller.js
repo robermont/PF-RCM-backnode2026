@@ -10,7 +10,7 @@ const default_user = {
 export async function login(req, res) {
     const { email, password } = req.body;
     console.log("EMAIL: ",email)
-    console.log("EMAIL: ",password)
+    console.log("PASS: ",password)
 
     if (email === "admin@gmail.com" && password === "123456") {
         const token = generateToken({ id: 1, email: email });
